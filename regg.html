@@ -69,23 +69,23 @@
       let pass = document.getElementById("pass").value.trim();
 
       if (n === "" || e === "" || p === "" || pass === "") {
-        alert("⚠️ All fields are required!");
+        alert(" All fields are required!");
         return false;
       }
       if (e.indexOf("@") === -1 || e.indexOf(".") === -1) {
-        alert("❌ Enter a valid email address!");
+        alert(" Enter a valid email address!");
         return false;
       }
       if (isNaN(p) || p.length !== 10) {
-        alert("📱 Enter a valid 10-digit phone number!");
+        alert(" Enter a valid 10-digit phone number!");
         return false;
       }
       if (pass.length < 6) {
-        alert("🔒 Password must be at least 6 characters long!");
+        alert(" Password must be at least 6 characters long!");
         return false;
       }
 
-      alert("✅ Registration Successful!");
+      alert("Registration Successful!");
       return true;
     }
   </script>
